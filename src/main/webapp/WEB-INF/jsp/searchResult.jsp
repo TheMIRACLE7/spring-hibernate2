@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Main page</title>
+    <title>Search results</title>
 </head>
 <body>
-<h2>Users</h2>
+<h2>Search results</h2>
 
 <table style="border: 1px solid; width: 500px; text-align:center">
     <thead style="background:#fcf">
@@ -33,14 +33,14 @@
 </table>
 
 <a href="add">Add user</a><bR/>
-<a href="searchForm">Search user</a><bR/>
+<a href="/">Main page</a><bR/>
 
 <c:if test="${page != 1}">
-<a href="?page=${page-1}">Previous</a>
+<a href="?page=${page-1}&name=${name}">Previous</a>
 </c:if>
-<a href="?page=${page}"> ${page}</a>
+<a href="?page=${page}&name=${name}"> ${page}</a>
 <c:if test="${users.size() == 10}">
-    <a href="?page=${page+1}"> Next</a>
+    <a href="?page=${page+1}&name=${name}"> Next</a>
 </c:if>
 
 

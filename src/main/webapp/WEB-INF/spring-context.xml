@@ -7,11 +7,4 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="textEditor" class="ru.controllers.TextEditor">
-        <property name="name" value="asdas" />
-    </bean>
-
-    <bean id="spellChecker" class="ru.controllers.SpellChecker">
-    </bean>
-
 </beans>
